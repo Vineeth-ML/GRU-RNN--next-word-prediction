@@ -10,14 +10,15 @@ Input:  "Mar. Horatio saies, 'tis but our"
 Output: "fantasie"
 
 🏗️ Model Architecture
-The model is a stacked GRU network built with TensorFlow/Keras:
-LayerOutput ShapeParametersEmbedding(None, 13, 100) 481,800GRU (None, 13, 150) 113,400Dropout(0.2) (None, 13, 150)0GRU(None, 100)75, 600Dense (softmax)(None, 4818)486,618
+The model is a stacked LSTM built with TensorFlow/Keras:
+LayerOutput ShapeParametersEmbedding(None, 13, 100)481,800LSTM(None, 13, 150)150,600Dropout(0.2)(None, 13, 150)0LSTM(None, 100)100,400Dense(None, 4818)486,618
+Total Parameters: 1,219,418 (~4.65 MB)
 
-Optimizer: Adam
 Loss: Categorical Crossentropy
+Optimizer: Adam
+Metric: Accuracy
 Epochs: 100
 Train/Test Split: 80/20
-
 
 📂 Project Structure
 .
