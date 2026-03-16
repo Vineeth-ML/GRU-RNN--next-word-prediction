@@ -11,7 +11,7 @@ Output: "fantasie"
 
 🏗️ Model Architecture
 The model is a stacked GRU network built with TensorFlow/Keras:
-LayerOutput ShapeParametersEmbedding(None, 13, 100)481,800GRU(None, 13, 150)113,400Dropout(0.2)(None, 13, 150)0GRU(None, 100)75,600Dense (softmax)(None, 4818)486,618
+LayerOutput ShapeParametersEmbedding(None, 13, 100) 481,800GRU (None, 13, 150) 113,400Dropout(0.2) (None, 13, 150)0GRU(None, 100)75, 600Dense (softmax)(None, 4818)486,618
 
 Optimizer: Adam
 Loss: Categorical Crossentropy
